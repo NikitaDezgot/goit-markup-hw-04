@@ -144,6 +144,17 @@ button {
   padding-top: 200px;
   padding-bottom: 200px;
 }
+.hero {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Hero-bac.jpg);
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
 /* .hero-conteiner {
   height: 600px;
 } */
@@ -188,6 +199,31 @@ button {
 .about-list:not(:last-child) {
   margin-right: 30px;
 }
+.about-list::before {
+  content: "";
+  display: block;
+  height: 120px;
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  /* outline: 2px solid red; */
+}
+
+.list-1::before {
+  background-image: url(../images/img-all-1.png);
+}
+.list-2::before {
+  background-image: url(../images/img-all-2.png);
+}
+.list-3::before {
+  background-image: url(../images/img-all-3.png);
+}
+.list-4::before {
+  background-image: url(../images/img-all-4.png);
+}
+
 .about-all-1 {
   color: #212121;
   font-weight: bold;
