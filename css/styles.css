@@ -128,6 +128,18 @@ button {
   text-decoration: none;
   color: #757575;
 }
+.icon-emeil {
+  height: 12px;
+  width: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.icon-telephone {
+  height: 12px;
+  width: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
 
 .body-1-top-adr :hover {
   color: #2196f3;
@@ -153,11 +165,9 @@ button {
   height: 600px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: center;
 }
-/* .hero-conteiner {
-  height: 600px;
-} */
+
 .hero-logo {
   color: #ffffff;
   font-weight: 900;
@@ -212,16 +222,16 @@ button {
 }
 
 .list-1::before {
-  background-image: url(../images/img-all-1.png);
+  background-image: url(../images/antenna.svg);
 }
 .list-2::before {
-  background-image: url(../images/img-all-2.png);
+  background-image: url(../images/clock.svg);
 }
 .list-3::before {
-  background-image: url(../images/img-all-3.png);
+  background-image: url(../images/diagram.svg);
 }
 .list-4::before {
-  background-image: url(../images/img-all-4.png);
+  background-image: url(../images/astronaut.svg);
 }
 
 .about-all-1 {
@@ -282,6 +292,9 @@ button {
 }
 .our-team-list {
   display: flex;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .our-team-img {
   list-style: none;
@@ -310,8 +323,105 @@ button {
   letter-spacing: 0.03em;
   margin-bottom: 30px;
 }
+
+.social-item {
+  width: 44px;
+  height: 44px;
+  list-style: none;
+  margin-bottom: 30px;
+}
+.social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: #2196f3;
+  border-radius: 50%;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-item {
+  margin-left: 10px;
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  justify-content: center;
+  align-items: center;
+}
+.social-icon:focus,
+.social-icon:hover {
+  fill: #ffffff;
+}
+
+.social-partners {
+  padding-bottom: 94px;
+  padding-top: 94px;
+  background-color: #e5e5e5;
+}
+.social-partners-logo {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 50px;
+}
+
+.social-partners-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.social-partners-item:hover .social-partners-item:focus {
+  background-color: #2196f3;
+}
+.social-partners-item:not(:last-child) {
+  margin-right: 30px;
+}
+.social-partners-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  outline: 1px solid #afb1b8;
+}
+.social-partners-icon {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+}
+.social-partners-link:focus
+  .social-partners-icon
+  .social-partners-link:hover
+  .social-partners-icon {
+  border-color: #2196f3;
+  fill: #2196f3;
+}
+/* \\\\\\FOOT////// */
+
 .foot {
   background-color: #2f303a;
+}
+.head-conteiner {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .foot-conteiner {
   padding-top: 60px;
@@ -370,6 +480,49 @@ button {
 }
 .foot a:focus {
   color: #2196f3;
+}
+
+.social-foot {
+  display: block;
+  padding-top: 72px;
+  padding-bottom: 100px;
+  align-items: baseline;
+  margin-left: 70px;
+}
+
+.social-logo {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.foot-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.foot-social-link:hover,
+.foot-social-link:focus {
+  background-color: #2196f3;
+  border-radius: 50%;
+}
+.foot-social-link:hover .foot-social-icon,
+.foot-social-link:focus .foot-social-icon {
+  fill: #ffffff;
+}
+
+.foot-social-icon {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
 }
 
 /* 2-nd PAGES */
@@ -462,4 +615,14 @@ button {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+}
+.conteiner-card:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+.conteiner-card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
