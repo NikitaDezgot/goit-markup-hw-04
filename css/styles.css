@@ -56,7 +56,10 @@ button {
 }
 
 /* Header */
-
+.conteiner-header {
+  border: 1px solid #eeeeee;
+  width: auto;
+}
 .body-1-top {
   background-color: #ffffff;
   padding-top: 42px;
@@ -276,8 +279,9 @@ button {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  /* margin-bottom: 10px;
-  margin-right: 30px; */
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-right: 30px;
 }
 .about-all-text {
   color: #757575;
@@ -396,8 +400,8 @@ button {
   justify-content: center;
   align-items: center;
 }
-.social-icon:focus,
-.social-icon:hover {
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
   fill: #ffffff;
 }
 
@@ -435,8 +439,9 @@ button {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  outline: 1px solid #afb1b8;
+  border: 1px solid #afb1b8;
   background: #ffffff;
+  border-radius: 4px;
 }
 .social-partners-icon {
   width: 106px;
@@ -628,6 +633,7 @@ button {
   /* margin-right: 30px;
   margin-bottom: 30px; */
   flex-basis: calc(100% / 3 - 30px);
+  border: 1px solid #eeeeee;
 }
 .port-itms:not(:nth-child(3n)) {
   margin-right: 30px;
