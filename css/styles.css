@@ -75,7 +75,10 @@ button {
 }
 .current {
   color: #2196f3;
+  background-color: #2196f3;
+  border-color: #2196f3;
 }
+
 .header-conteiner {
   display: flex;
   align-items: center;
