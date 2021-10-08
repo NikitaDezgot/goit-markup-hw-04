@@ -40,11 +40,11 @@ button {
 .body-1 {
   color: #757575;
 }
-.current {
+/* .current {
   color: #2196f3;
   position: relative;
-}
-.current::after {
+} */
+/* .current::after {
   content: "";
   width: 100%;
   height: 4px;
@@ -53,7 +53,7 @@ button {
   right: 0;
   background-color: #2196f3;
   border-radius: 3px;
-}
+} */
 
 /* Header */
 .conteiner-header {
@@ -65,13 +65,17 @@ button {
   padding-top: 42px;
   padding-bottom: 42px;
 }
-.body-1-top:focus {
+.body-1-top:focus,
+.current {
   border-color: #2196f3;
 }
-.body-1-top:hover {
+.body-1-top:hover,
+.current {
   border-color: #2196f3;
 }
-
+.current {
+  color: #2196f3;
+}
 .header-conteiner {
   display: flex;
   align-items: center;
