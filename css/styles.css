@@ -57,9 +57,6 @@ button {
 .body-1-top:hover {
   border-color: #2196f3;
 }
-.current {
-  color: #2196f3;
-}
 
 .header-conteiner {
   display: flex;
@@ -129,9 +126,12 @@ button {
 .body-1-top-link a {
   text-decoration: none;
 }
-.header-item {
+.header-item > a {
   text-decoration: none;
   color: #212121;
+}
+.current {
+  color: #2196f3;
 }
 
 .body-1-top-adr {
